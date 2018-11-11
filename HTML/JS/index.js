@@ -12,7 +12,7 @@ function loadYear(){
     var str='';
     $.ajax({
         url: 'https://ancient-shelf-26491.herokuapp.com/',
-        headers: {  'Access-Control-Allow-Origin': '*' },
+       
         type: 'GET',
         crossDomain: true,
         dataType: 'json',
@@ -20,7 +20,7 @@ function loadYear(){
             format:"json"
         },
         success:function(data){
-            
+            console.log(data);
             for(var i=0;i<data.length;i++){
                 str=str+"<option value = '" + data[i].year+ " '>" + data[i].year + " </option>";
             }

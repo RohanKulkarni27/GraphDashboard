@@ -14,13 +14,13 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="form-group">
-                    <label>Select Year</label>
+                    <label class="labelClass">Select Year</label>
                     <select id="Year" class="form-control" name="Year">
 
                     </select>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
+            <div style="margin-top:20px;" class="col-md-6 col-sm-6 col-xs-6">
                     <button type="submit" name="submit" class="btn btnSubmit btn-primary" onclick="GenerateReportfn();" >Generate Report</button>
             </div>
         </div>
@@ -35,8 +35,8 @@
                     
                 </div>
                 <div id="GradeDropDown">
-                        <div class="form-group">
-                               <label id="gradeLabel">Select Grade</label>
+                        <div style="margin-top:15px;" class="form-group">
+                               <label class="labelClass" id="gradeLabel">Select Grade</label>
                                <select onchange="myFunction()"  id="GradeValue" class="form-control" name="Grade">
                                 </select>
                             </div>

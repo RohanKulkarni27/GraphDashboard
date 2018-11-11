@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql');
 const morgan = require('morgan');
-app.use(express.static('./Public/index.html'));
+
 app.use(morgan('combined'));
 
 

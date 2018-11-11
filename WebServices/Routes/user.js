@@ -94,6 +94,7 @@ router.get("/grade/",(req,res)=>{
     const query = "select DISTINCT grade as grade from loan";
    // const query = "Select * from users where FirstName='"+name+"'";
    connection.query(query,(err,rows,field)=>{
+       //Code for cross browser enabling
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
     res.json(rows);

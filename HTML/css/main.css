@@ -39,3 +39,6 @@ body{
 #GradeValue,#gradeLabel{
     display:none;
 }
+.labelClass{
+    color: #1aa3ff;
+}

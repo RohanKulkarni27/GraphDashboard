@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/data.js"></script>
+            <link rel="stylesheet" type="text/css" href="./css/main.css">
+            <script src="./JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <label>Select Year</label>
+                    <select id="Year" class="form-control" name="Year">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                    <button type="submit" name="submit" class="btn btnSubmit btn-primary" onclick="GenerateReportfn();" >Generate Report</button>
+            </div>
+        </div>
+        
+        <div class="row" id="valueDiv">
+            
+        </div>
+        <div class="row" style="height:8%;"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="Grade">
+                    
+                </div>
+                <div id="GradeDropDown">
+                        <div class="form-group">
+                               <label id="gradeLabel">Select Grade</label>
+                               <select onchange="myFunction()"  id="GradeValue" class="form-control" name="Grade">
+                                </select>
+                            </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sx-6">
+                    <div id="BarContainer" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
